@@ -1,0 +1,60 @@
+--verificare constrangere unicitate(esenta_id_parfum,gramaj)
+insert into ambalaje values(2000,null,102,150,75);
+
+--verificare constrangere nume distribuitor
+update distribuitor set nume_distr='12Abc' where id_distribuitor=100;
+
+--verificare constrangere nume ingredient
+update ingrediente set nume_ingredient='12Abc' where id_ingredient=3000;
+
+--verificare constrangere nume parfum
+update esenta set nume_parfum='12Abc' where id_parfum=2000;
+
+--verificare constrangere URL
+update info set link='@abcd' where esenta_id_parfum=2000;
+
+--verificare unicitate informatii-parfum
+insert into info values(2001,'Barbati','Lemnos','https://www.google.com/search?q=one+million');
+
+--verificare daca putem introduce procente mai mari de 99 
+insert into formula values(2000,3000,100);
+
+--vizualizarea tuturor distribuitorilor
+select*from distribuitor;
+
+--vizualizarea tuturor ambalajelor cu gramajele in care se gasesc
+select id_ambalaj,gramaj from ambalaje;
+
+--vizualizarea tuturor cererilor 
+select*from cereri;
+
+--vizualizarea distribuitorilor ce au trimis cereri
+select unique distribuitor.nume_distr, distribuitor.id_distribuitor from distribuitor inner join Cereri on distribuitor.id_distribuitor=cereri.distribuitor_id_distribuitor
+
+--vizualizarea tuturor esenta 
+select *from esenta;
+
+--vizualizarea tuturor ingrediente
+select *from ingrediente;
+
+--vizualizarea tuturor informatiilor
+select *from info;
+
+--vizualizarea tuturor ingredientelor folosite 
+select unique ingrediente.id_ingredient,ingrediente.nume_ingredient from ingrediente inner join Formula on ingrediente.id_ingredient=formula.ingrediente_id_ingredient;
+
+--actualizare valori cereri
+update cereri set ambalaje_id_ambalaj=1001 where distribuitor_id_distribuitor=101 and ambalaje_id_ambalaj=1002
+update cereri set distribuitor_id_distribuitor=104 where distribuitor_id_distribuitor=103 and ambalaje_id_ambalaj=1005
+update cereri set nr_bucati=104 where distribuitor_id_distribuitor=103 and ambalaje_id_ambalaj=1005
+
+--actualizare cantitate ingredient
+update ingrediente set cantitate=4000 where id_ingredient=3000;
+
+--actualizare pret
+update ambalaje set pret=400 where id_ambalaj=1000;
+
+--stergere info
+delete from info where esenta_id_parfum=2000;
+
+

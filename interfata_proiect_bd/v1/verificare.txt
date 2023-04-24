@@ -1,0 +1,46 @@
+
+def verificare_stocuri():
+   #ambalaje
+   cursor.execute(
+      'select stoc from ambalaje where id_ambalaj=' + str(client.cod_ambalaj) + '')
+   stoc = cursor.fetchall()
+   stoc = str(stoc)
+   stoc=stoc[2:len(stoc)-3]
+   if(int(client.nr_bucati)>=int(stoc)):
+      disponibil=1
+   else:
+      disponibil = 0
+   if(disponibil ==1):
+
+      #ingrediente
+      cursor.execute(
+         'select procent from formula where esenta_id_parfum=' + str(client.cod_parfum) + '')
+      rows=cursor.fetchall()
+      procente=[]
+      for i in rows:
+         i=str(i)
+         i=i[1:len(i)-2]
+         procente.append(i)
+
+      ingrediente=[]
+      cursor.execute(
+         'select ingrediente_id_ingredient from formula where esenta_id_parfum=' + str(client.cod_parfum) + '')
+      rows=cursor.fetchall()
+      for i in rows:
+         i=str(i)
+         i=i[1:len(i)-2]
+         i=int(i)
+         ingrediente.append(i)
+      cantitate=[]
+      for i in range (0,len(ingrediente)-1):
+         cursor.execute(
+            'select cantitate from ingrediente where id_ingredient=' + str(ingrediente[i]) + '')
+         rows = cursor.fetchall()
+         rows=str(rows)
+         rows=rows[2:len(rows)-3]
+         cantitate.append(rows)
+         if(int(procente[i])*int(client.nr_bucati)>int(cantitate[i])):
+            disponibil=1
+      if(disponibil==1):
+         text = Label(win, text=" Cantitatea solicitata nu este disponibila").place(
+            relx=7 / 10, rely=7 / 10)

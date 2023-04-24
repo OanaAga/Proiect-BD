@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F449EF27-E547-519B-1D35-6878A3164587" name="Ingrediente">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>04525B06-8E8F-CD6F-35EA-C0BBE8EEEB48</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ingredient" id="14D60CDC-38B3-8C85-A68F-5C07D643E5EA">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>D883976D-B9E6-FD63-05F8-AF9DA162D157</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>3000</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume_ingredient" id="C02191B1-D0C3-8B6C-5213-C32B0B07706D">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>E2AB50F5-E3E7-729C-990F-8663AD4EC55E</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<constraintName>Ingrediente_Nume_ingredient_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Nume_ingredient,&apos;^[A-Za-z]+((\s)?([a-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cantitate" id="55D92B25-E85F-EDCC-3221-057276AE872B">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>083A0A4D-35E0-FCEC-9CD0-6B4D9C7B521D</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBCF78EB-F8BB-4DFC-19D3-BDE944C68F90" name="Ingrediente_PK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>84A29E62-0493-61BF-B98F-ADD1C34AB80C</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14D60CDC-38B3-8C85-A68F-5C07D643E5EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC50708B-8B84-519E-0ACD-D446DE5B2495" name="Ingrediente_Nume_ingredient_UN">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>A7689DD1-C0C1-308B-7A3E-215AD05C99D1</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C02191B1-D0C3-8B6C-5213-C32B0B07706D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

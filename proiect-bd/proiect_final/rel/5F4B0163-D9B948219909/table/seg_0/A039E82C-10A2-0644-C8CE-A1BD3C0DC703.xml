@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A039E82C-10A2-0644-C8CE-A1BD3C0DC703" name="Ambalaje">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>C6C91F67-9979-D7AD-6418-EEFD437EC695</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Esenta_Id_parfum" id="33BE4D8D-C201-0932-2095-C1529BDEE72B">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>32D0C8BA-78CE-9F91-A612-1897CC4E2A08</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AE61741-B7A4-EF27-2CC0-94067934D3DD" referredColumn="79C97A7C-1973-9239-703B-4D83803A806F"/>
+</associations>
+</Column>
+<Column name="Id_ambalaj" id="3C28349B-7C7C-E997-BBD3-A5577897F07C">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>198CDDAB-C770-F05E-D0C1-C58002B9B659</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>1000</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Stoc" id="7B7EB998-01DC-9BC2-7FB7-CD2E9E1207C6">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>A8AF3D4F-8A94-F314-264F-FB9AD2C30BE5</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Pret" id="F4936854-621E-30D6-3A1C-A9FB3FC28F93">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>92A6D99A-5402-CD44-871C-4B3B7EB77C7C</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Gramaj" id="A37E5EAC-6224-E6C0-02F0-283371D6E1EA">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>31B30EC3-02B5-057C-0279-39C1F0B1A878</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="76EC6264-5565-C243-8478-18E12BEEC4A7" name="Ambalaje_PK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>85BA68F6-8B5D-E99F-4737-A233D678A757</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C28349B-7C7C-E997-BBD3-A5577897F07C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81DA7AA4-8740-DFF7-F242-D2B258508BCA" name="Ambalaje_Id_parfum_Gramaj_UN">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>9CDAE0ED-BAF3-6218-16A0-C2C7B0BAD105</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33BE4D8D-C201-0932-2095-C1529BDEE72B"/>
+<colUsage columnID="A37E5EAC-6224-E6C0-02F0-283371D6E1EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0FA02D5-16ED-8E38-FC99-5F3E9F4628E8" name="Ambalaje_Esenta_FK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>CD7C2ECA-4050-E903-FC18-DC2B7DF79337</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33BE4D8D-C201-0932-2095-C1529BDEE72B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

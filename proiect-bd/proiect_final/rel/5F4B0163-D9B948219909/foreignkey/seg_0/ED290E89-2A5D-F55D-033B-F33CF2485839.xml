@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ED290E89-2A5D-F55D-033B-F33CF2485839" containerWithKeyObject="D2CA6493-B0F0-4944-0726-B88F245923C3" localFKIndex="50335A77-3FD1-E8A5-DF52-4C48586688E9" name="Info_Esenta_FK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>F11C5DB8-1CEA-1D25-C546-5C2769E5126F</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<referredTableLongName>Esenta</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AE5FEE88-4125-8B07-6E29-22576480CA22</referredTableID>
+<keyObject>C353F8A4-5805-37CF-C247-BEC5C921CB9C</keyObject>
+<referredKeyID>C353F8A4-5805-37CF-C247-BEC5C921CB9C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_parfum</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

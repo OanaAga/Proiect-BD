@@ -1,0 +1,90 @@
+insert into ingrediente values(null,'Alcool',50000);
+insert into ingrediente values(null,'Piper roz',250);
+insert into ingrediente values(null,'Vanilie',500);
+insert into ingrediente values(null,'Menta',150);
+insert into ingrediente values(null,'Trandafir',150);
+insert into ingrediente values(null,'Orhidee',100);
+insert into ingrediente values(null,'Iasomie',150);
+insert into ingrediente values(null,'Mosc',300);
+
+select * from ingrediente;
+
+insert into esenta values(null,'Scandal');
+insert into esenta values(null,'One million');
+insert into esenta values(null,'La vie est belle');
+insert into esenta values(null,'Eros');
+insert into esenta values(null,'Good girl');
+insert into esenta values(null,'Si');
+
+select*from esenta;
+
+
+insert into ambalaje values(2000,null,100,150,75);
+insert into ambalaje values(2001,null,105,275,100);
+insert into ambalaje values(2002,null,90,375,50);
+insert into ambalaje values(2003,null,25,200,75);
+insert into ambalaje values(2004,null,100,150,100);
+insert into ambalaje values(2005,null,60,400,75);
+
+select *from ambalaje;
+
+insert into distribuitor values(null,'Iullius Mall');
+insert into distribuitor values(null,'Centru Comercial Felicia');
+insert into distribuitor values(null,'Beauty Mania');
+insert into distribuitor values(null,'Elefant');
+insert into distribuitor values(null,'Douglas');
+insert into distribuitor values(null,'Dm');
+
+select * from distribuitor;
+
+insert into cereri values(1000,100,1000,25,sysdate);
+insert into cereri values(1000,100,1002,30,sysdate);
+insert into cereri values(1000,100,1001,20,sysdate);
+insert into cereri values(1000,101,1000,50,sysdate);
+insert into cereri values(1001,101,1001,30,sysdate);
+insert into cereri values(1001,102,1000,35,sysdate);
+insert into cereri values(1001,102,1002,30,sysdate);
+insert into cereri values(1002,102,1003,50,sysdate);
+insert into cereri values(1002,102,1005,50,sysdate);
+insert into cereri values(1002,102,1004,40,sysdate);
+
+select *from cereri;
+
+insert into info values(2001,'Barbati','Lemnos','https://www.google.com/search?q=one+million');
+insert into info values(2002,'Dama','Floral','https://www.google.com/search?q=la+vie+est+bellesource=lnms');
+insert into info values(2003,'Barbati','Lemnos','https://www.google.com/search?q=eros');
+insert into info values(2004,'Dama','Floral','https://www.google.com/search?q=si');
+insert into info values(2005,'Dama','Fructat','https://www.google.com/search?q=si');
+insert into info values(2006,'Dama','Fructat','https://www.google.com/search?q=si');
+select *from info;
+
+insert into formula values(2000,3000,60);
+insert into formula values(2000,3001,5);
+insert into formula values(2000,3002,20);
+insert into formula values(2000,3004,10);
+insert into formula values(2000,3005,5);
+insert into formula values(2001,3000,70);
+insert into formula values(2001,3001,5);
+insert into formula values(2001,3007,25);
+insert into formula values(2002,3000,50);
+insert into formula values(2002,3005,20);
+insert into formula values(2002,3006,20);
+insert into formula values(2002,3003,10);
+insert into formula values(2003,3000,50);
+insert into formula values(2003,3001,10);
+insert into formula values(2003,3007,20);
+insert into formula values(2003,3003,10);
+insert into formula values(2003,3002,10);
+insert into formula values(2004,3000,40);
+insert into formula values(2004,3004,10);
+insert into formula values(2004,3005,5);
+insert into formula values(2004,3006,10);
+insert into formula values(2004,3003,5);
+insert into formula values(2004,3002,20);
+insert into formula values(2004,3001,10);
+insert into formula values(2005,3000,70);
+insert into formula values(2005,3007,10);
+insert into formula values(2005,3003,10);
+insert into formula values(2005,3001,10);
+
+select *from formula;

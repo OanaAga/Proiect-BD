@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC942741-9A15-4504-0ACD-365322BFFF67" name="Formula">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Esenta_Id_parfum" id="6EA56B2F-D81B-55BE-6A77-737A1A69237F">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5B5FA538-1862-36AF-A787-EB587EE83DB3" referredColumn="79C97A7C-1973-9239-703B-4D83803A806F"/>
+</associations>
+</Column>
+<Column name="Ingrediente_ID_ingredient" id="4928E1BF-EA51-A630-374A-C58B8230037C">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFBD31AE-0445-BDC4-C426-781AF5913788" referredColumn="14D60CDC-38B3-8C85-A68F-5C07D643E5EA"/>
+</associations>
+</Column>
+<Column name="Procent" id="0EEBBB07-EB6C-853F-DCA5-A81EE1E3D8D7">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>C8861BBA-482B-BD76-BDF7-6D16EF417073</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5EF0B9C4-62C0-A5C9-1D4C-A9115C1D1288" name="Formula_PK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EA56B2F-D81B-55BE-6A77-737A1A69237F"/>
+<colUsage columnID="4928E1BF-EA51-A630-374A-C58B8230037C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97F5BF98-CBF5-E5E5-858A-9EE6C079A14B" name="Formula_Esenta_FK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>347095D0-BEA1-BE7D-D447-C765FB6519AE</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EA56B2F-D81B-55BE-6A77-737A1A69237F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3F8863B-9674-9D33-13A4-60D1EDD01938" name="Formula_Ingrediente_FK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>347095D0-BEA1-BE7D-D447-C765FB6519AE</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4928E1BF-EA51-A630-374A-C58B8230037C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4F2D32F-0FF6-D82A-409C-E163409EA23C" name="Esenta">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-23 14:47:36 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_parfum" id="E502CBA2-709E-6522-8C9A-CD75E8629537">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-23 14:47:36 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<importedID>A7F79BF0-6CC8-B350-2FA9-1558E4BA986A</importedID>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nume_parfum" id="BF77C3AF-571C-887D-7082-A6C692C8B3E6">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-23 14:47:36 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<importedID>FC9E4869-3F8C-8F9A-49B3-1A8023253CCA</importedID>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<constraintName>produs final_Nume_parfum_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Nume_parfum,&apos;^[A-Za-z]+((\s)?([a-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1B21F3E9-69CA-8C96-5881-19E348AD9DF1" name="Esenta PK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-23 14:47:36 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E502CBA2-709E-6522-8C9A-CD75E8629537</newElementsIDs>
+<usedAttributes>
+<attributeRef>E502CBA2-709E-6522-8C9A-CD75E8629537</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="CAC4F2FF-0AEF-98A7-0427-0E5B783BD5D6" name="Esenta_Nume_parfum_uk">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-24 09:10:13 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="false"/>
+</engineerTo>
+<newElementsIDs>BF77C3AF-571C-887D-7082-A6C692C8B3E6</newElementsIDs>
+<usedAttributes>
+<attributeRef>BF77C3AF-571C-887D-7082-A6C692C8B3E6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE5FEE88-4125-8B07-6E29-22576480CA22" name="Esenta">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>B4F2D32F-0FF6-D82A-409C-E163409EA23C</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_parfum" id="79C97A7C-1973-9239-703B-4D83803A806F">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>E502CBA2-709E-6522-8C9A-CD75E8629537</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>2000</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume_parfum" id="58A110B3-175D-CF0B-0B9B-05E372736FEE">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>BF77C3AF-571C-887D-7082-A6C692C8B3E6</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<constraintName>produs final_Nume_parfum_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Nume_parfum,&apos;^[A-Za-z]+((\s)?([a-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C353F8A4-5805-37CF-C247-BEC5C921CB9C" name="Esenta_PK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>1B21F3E9-69CA-8C96-5881-19E348AD9DF1</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79C97A7C-1973-9239-703B-4D83803A806F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23675D91-3FFA-167E-4012-B6677B0307F5" name="Esenta_Nume_parfum_UN">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>CAC4F2FF-0AEF-98A7-0427-0E5B783BD5D6</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="58A110B3-175D-CF0B-0B9B-05E372736FEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

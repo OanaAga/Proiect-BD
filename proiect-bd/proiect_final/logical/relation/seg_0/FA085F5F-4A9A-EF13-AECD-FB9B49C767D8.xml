@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_6" directorySegmentName="seg_0" id="FA085F5F-4A9A-EF13-AECD-FB9B49C767D8">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-26 09:10:01 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<sourcePk>85BA68F6-8B5D-E99F-4737-A233D678A757</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>sunt continute de</nameOnSource>
+<nameOnTarget>contin</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C6C91F67-9979-D7AD-6418-EEFD437EC695</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9F351AE7-BB53-2DB0-0123-37421CC09B08</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

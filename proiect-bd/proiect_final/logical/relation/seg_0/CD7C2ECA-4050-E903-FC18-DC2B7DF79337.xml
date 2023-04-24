@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_7" directorySegmentName="seg_0" id="CD7C2ECA-4050-E903-FC18-DC2B7DF79337">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-25 16:34:51 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<sourcePk>1B21F3E9-69CA-8C96-5881-19E348AD9DF1</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>este pusa in</nameOnSource>
+<nameOnTarget>contine</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B4F2D32F-0FF6-D82A-409C-E163409EA23C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C6C91F67-9979-D7AD-6418-EEFD437EC695</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

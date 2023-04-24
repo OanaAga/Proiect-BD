@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1AC913A8-F759-9F9E-4252-1A0F09710A9C" name="Distribuitor">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>75FF9F6E-51A1-2F03-FE9B-E8F2179BA021</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_distribuitor" id="7B8609DA-F10B-B8AC-EE3A-B49DCEC679F9">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>CCE17EFD-AB65-B800-5A02-729A24B7DF50</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementStartWith>100</autoIncrementStartWith>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nume_distr" id="744E6680-7B1F-52BA-52BA-53BAECDF0A8C">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>AE84AF10-516F-9F35-23EF-A0782C9B6CED</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<constraintName>Distribuitor_Nume_distr</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Nume_distr,&apos;^[A-Za-z]+((\s)?([A-Za-z])+)*$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="382988B2-FA8E-5681-C5F8-BDE04533F4F9" name="Distribuitor_PK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>F8F16F52-C88D-32FE-6E36-36C0F33C81C0</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7B8609DA-F10B-B8AC-EE3A-B49DCEC679F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C49A2473-5027-1B1F-2EDB-00E39EB1A2EA" name="Distribuitor_Nume_distr_UN">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>07C3CF03-8640-83D6-CD9D-606679206AC1</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="744E6680-7B1F-52BA-52BA-53BAECDF0A8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

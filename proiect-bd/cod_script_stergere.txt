@@ -1,0 +1,12 @@
+drop table ingrediente;
+drop table formula;
+drop table info;
+drop table cereri;
+drop table distribuitor;
+drop table esenta;
+drop table ambalaje;
+
+drop sequence AMBALAJE_ID_AMBALAJ_SEQ;
+drop sequence DISTRIBUITOR_ID_DISTRIBUITOR;
+drop sequence ESENTA_ID_PARFUM_SEQ;
+drop sequence INGREDIENTE_ID_INGREDIENT_SEQ;

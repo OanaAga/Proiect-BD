@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9F351AE7-BB53-2DB0-0123-37421CC09B08" name="Cereri">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-23 14:47:36 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nr_comanda" id="F9FAE182-CFBB-FACE-5716-F236F56C1373">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-09 11:40:55 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_distribuitor" id="EA273F1D-CCE4-1FA1-5E99-78061A49B2AA">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-26 09:09:30 UTC</createdTime>
+<generatorID>78389DBB-94A1-F83A-30BB-F50CC0426187</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<referedAttribute>CCE17EFD-AB65-B800-5A02-729A24B7DF50</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_ambalaj" id="2CDDF7AF-50BD-6B0B-740D-7E59C6211161">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-26 09:10:01 UTC</createdTime>
+<generatorID>FA085F5F-4A9A-EF13-AECD-FB9B49C767D8</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<referedAttribute>198CDDAB-C770-F05E-D0C1-C58002B9B659</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nr_bucati" id="0BB30789-543F-965C-F6D2-2026DB4E1949">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-23 14:47:36 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<importedID>7D7E5E0F-A804-A03C-4C83-BED849A53B6A</importedID>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Data" id="A18E9AA4-EE71-30DD-D549-195C49A09BD9">
+<createdBy>Oana</createdBy>
+<createdTime>2022-11-23 14:47:36 UTC</createdTime>
+<ownerDesignName>proiect_final</ownerDesignName>
+<importedID>8B04FA3B-5110-DD77-D48E-D49F86E8D55E</importedID>
+<engineerTo>
+<item key="5F4B0163-11D8-E893-A237-D9B948219909" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

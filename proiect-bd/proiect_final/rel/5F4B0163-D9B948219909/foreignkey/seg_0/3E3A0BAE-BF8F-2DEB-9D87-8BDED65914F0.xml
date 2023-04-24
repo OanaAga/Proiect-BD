@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3E3A0BAE-BF8F-2DEB-9D87-8BDED65914F0" containerWithKeyObject="2379C4F2-0E87-5779-8D95-332F59004F7B" localFKIndex="96EC1FF1-FF61-8445-9988-716CADC6EF8B" name="Cereri_Distribuitor_FK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>78389DBB-94A1-F83A-30BB-F50CC0426187</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<referredTableLongName>Distribuitor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1AC913A8-F759-9F9E-4252-1A0F09710A9C</referredTableID>
+<keyObject>382988B2-FA8E-5681-C5F8-BDE04533F4F9</keyObject>
+<referredKeyID>382988B2-FA8E-5681-C5F8-BDE04533F4F9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Id_distribuitor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2379C4F2-0E87-5779-8D95-332F59004F7B" name="Cereri">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>9F351AE7-BB53-2DB0-0123-37421CC09B08</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Nr_comanda" id="785E2299-69CB-28ED-3697-C306F3CB99AD">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>F9FAE182-CFBB-FACE-5716-F236F56C1373</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Distribuitor_Id_distribuitor" id="50792216-5E41-168F-8B43-08D81AD72B10">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>EA273F1D-CCE4-1FA1-5E99-78061A49B2AA</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E3A0BAE-BF8F-2DEB-9D87-8BDED65914F0" referredColumn="7B8609DA-F10B-B8AC-EE3A-B49DCEC679F9"/>
+</associations>
+</Column>
+<Column name="Ambalaje_Id_ambalaj" id="F68A4717-3197-2BEE-0AE7-0D12470B89C2">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>2CDDF7AF-50BD-6B0B-740D-7E59C6211161</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD5EF75E-2EA2-C16C-8402-F1B9C97AF2FB" referredColumn="3C28349B-7C7C-E997-BBD3-A5577897F07C"/>
+</associations>
+</Column>
+<Column name="Nr_bucati" id="09795AE4-1DE5-43C8-7F5D-A63BDDB942DB">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>0BB30789-543F-965C-F6D2-2026DB4E1949</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Data" id="3F697D75-4DB9-642F-0064-502086FD7B61">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>A18E9AA4-EE71-30DD-D549-195C49A09BD9</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96EC1FF1-FF61-8445-9988-716CADC6EF8B" name="Cereri_Distribuitor_FK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>78389DBB-94A1-F83A-30BB-F50CC0426187</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50792216-5E41-168F-8B43-08D81AD72B10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D40B8EC4-03E3-9F7D-8269-FAB414A1D69D" name="Cereri_Ambalaje_FK">
+<createdBy>Oana</createdBy>
+<createdTime>2022-12-15 07:36:54 UTC</createdTime>
+<generatorID>FA085F5F-4A9A-EF13-AECD-FB9B49C767D8</generatorID>
+<ownerDesignName>proiect_final</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F68A4717-3197-2BEE-0AE7-0D12470B89C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
